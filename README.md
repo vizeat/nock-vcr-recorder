@@ -1,4 +1,4 @@
-# Nock VCR Recorder [![Build Status](https://travis-ci.org/vizeat/nock-vcr-recorder.svg?branch=master)](https://travis-ci.org/vizeat/nock-vcr-recorder) [![codecov](https://codecov.io/gh/vizeat/nock-vcr-recorder/branch/master/graph/badge.svg)](https://codecov.io/gh/vizeat/nock-vcr-recorder)
+# Nock VCR Recorder [![Build Status](https://travis-ci.org/vizeat/nock-vcr-recorder.svg?branch=master)](https://travis-ci.org/vizeat/nock-vcr-recorder) [![codecov](https://codecov.io/gh/vizeat/nock-vcr-recorder/branch/master/graph/badge.svg)](https://codecov.io/gh/vizeat/nock-vcr-recorder) [![npm version](https://badge.fury.io/js/nock-vcr-recorder.svg)](https://badge.fury.io/js/nock-vcr-recorder) [![Dependency Status](https://david-dm.org/vizeat/nock-vcr-recorder.svg)](https://david-dm.org/vizeat/nock-vcr-recorder)
 
 
 A test framework agnostic vcr implementation that uses

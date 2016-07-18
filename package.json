@@ -5,7 +5,8 @@
   "main": "lib/vcr.js",
   "scripts": {
     "test": "rm -rf cassettes && mocha test/*-test.js",
-    "coverage": "rm -rf cassettes && istanbul cover _mocha -- test/*-test.js"
+    "coverage": "rm -rf cassettes && istanbul cover _mocha -- test/*-test.js",
+    "postpublish": "greenkeeper-postpublish"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "express": "^4.13.4",
+    "greenkeeper-postpublish": "^1.0.0",
     "istanbul": "^0.4.4",
     "mocha": "^2.5.1",
     "request": "^2.73.0"
