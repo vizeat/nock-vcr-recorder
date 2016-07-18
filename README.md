@@ -1,4 +1,5 @@
-# Nock VCR Recorder [![Build Status](https://travis-ci.org/poetic/nock-vcr-recorder.svg?branch=master)](https://travis-ci.org/poetic/nock-vcr-recorder)
+# Nock VCR Recorder [![Build Status](https://travis-ci.org/vizeat/nock-vcr-recorder.svg?branch=master)](https://travis-ci.org/vizeat/nock-vcr-recorder) [![codecov](https://codecov.io/gh/vizeat/nock-vcr-recorder/branch/master/graph/badge.svg)](https://codecov.io/gh/vizeat/nock-vcr-recorder)
+
 
 A test framework agnostic vcr implementation that uses
 [nock](https://github.com/pgte/nock). Can be used in isolation or test specific
@@ -7,7 +8,7 @@ libraries can be written around it.
 ## Install
 
 ```bash
-npm install --save-dev nock-vcr-recorder
+npm install --save-dev @albanv/nock-vcr-recorder
 ```
 
 ## Usage
@@ -20,8 +21,7 @@ asyncronous actions and it returns a promise that resolves when it's finished.
 Example using mocha:
 
 ```js
-var RSVP    = require('rsvp');
-var request = RSVP.denodeify(require('request'));
+var request = require('request-promise');
 var assert  = require('assert');
 var vcr     = require('nock-vcr-recorder');
 
@@ -65,7 +65,7 @@ Defaults:
 
   // Re-record and overwrite your current fixtures
   // Possible values: 'all'
-  mode: undefined, 
+  mode: undefined,
 
   // Write recorded fixtures when the test fails. We don't do this by default
   writeOnFailure: false
@@ -99,4 +99,3 @@ please open an issue or a pull requests and we'll work on getting them in.
 [@poeticsystems](http://twitter.com/poeticsystems)
 
 [Licensed under the MIT license](http://www.opensource.org/licenses/mit-license.php)
-
